@@ -1,0 +1,292 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: url('https://wallpapercave.com/wp/VLqMEa1.jpg');
+  background-size: fixed;
+  min-width: 320px;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  display:block;
+  position: relative;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+/*SCORE KEEPER */
+header {
+  width: 100%;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+header ul li {
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: inline;
+}
+
+header ul {
+  text-align: center;
+  margin-top: .25em;
+}
+
+/* start quiz page title and button*/
+.beginQuiz {
+  margin-top: 150px;
+}
+
+.logo-front-page {
+  display:block;
+  position: relative;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 10px;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 50px;
+}
+
+.start-button, .restart {
+  padding: 20px;
+  border: none;
+  background-color: #f14c38;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 50%;
+}
+/* end start quiz page title and button */
+
+/*holds the question/answers in JS */
+.question-generator {
+  width: 75%;
+  margin: auto;
+}
+
+/* Start question styling */
+.question-text {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline block;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  border-radius: 3px;
+  font-size: 2em;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/*answer radios styling*/
+legend { 
+  display:none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 8px solid #00b9fa;
+  transition: 0.2s all linear;
+  outline: none;
+  display: none;
+}
+
+input:checked {
+  border: 8px solid #f6c93c;
+}
+
+fieldset {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
+label {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  border-radius: 10px;
+  transition: 0.8s;
+  margin-bottom: 10px;
+}
+
+.answerOption span {
+  display: block;
+  font-size: 2em;
+  padding: .5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.answerOption {
+  background-color: #00b9fa;
+}
+
+.answerOption:hover {
+  background-color: #f14c38;
+  color: #FFFFFF;
+}
+
+.selected-answer {
+  background-color: #f6c93c;
+}
+
+/*END Radios Styling*/
+
+.feedback {
+  margin-top: 50px;
+  margin-bottom: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f6c93c80;
+  width: 75%;
+}
+
+#submit-answer {
+  padding: 1em;
+  border: none;
+  background-color: #f14c38;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: auto;
+  width: 100%;
+  display: block;
+}
+
+#next-question-button  {
+  padding: 1em;
+  border: none;
+  background-color: #f14c38;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+#submit-answer:hover, .start-button:hover, #next-question-button:hover, .restart:hover {
+  background-color: #f9ce41;
+  color: #00b8f3
+}
+
+/* Ipad view */
+@media all and (max-width: 600px) {
+  .beginQuiz {
+    margin-top: 50px;
+  }
+  .logo {
+    height: 55px;
+    padding: 5px;
+    margin-bottom:0;
+    ;  }
+  
+  label {
+    padding: 0;
+  }
+  
+  header ul li {
+    font-size:.4em;
+  }
+  
+  header ul {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  
+  .feedback {
+    font-size: 2em;
+    width: 90%;
+  }
+  
+  .question-text {
+    margin-top:10px;
+    margin-bottom:10px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+  }
+
+  fieldset {
+    width:100%;
+    font-size:.75em;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .logo {
+    height: 55px;
+  }
+  .logo-front-page {
+    height: 55px;
+  }
+
+  .question-text {
+    margin-top:10px;
+    margin-bottom:10px;
+    width: 100%;
+    padding: 5px;
+  }
+
+  fieldset {
+    width:100%;
+    font-size:.75em;
+  }
+}
+  
+
+
