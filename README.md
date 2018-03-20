@@ -1,0 +1,1 @@
+This is a friends quiz containing 10 questions to challenge your knowledge of the Friends TV show. 

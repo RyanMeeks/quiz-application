@@ -1,8 +1,8 @@
 'use strict';
+
 let questionNum = 0;
 let correctAnswers = 0;
-let displayQuestion = 1;
-let answerNum = 0;
+
 const questionGroup =  [
   { 
     question: `How many babies did Phoebe carry for her brother?`,
@@ -73,7 +73,7 @@ function triviaTemplate(question, questionsAnswered, correctAnswers) {
     <header role='banner'>
       <img class="logo" src="https://vignette.wikia.nocookie.net/logopedia/images/2/23/1000px-Friends_logo_svg.png/revision/latest?cb=20130416015343" alt="friends logo">
       <ul>
-        <li>Question: <span class="questionNumber">${displayQuestion}</span>/10</li>
+        <li>Question: <span class="questionNumber">${questionNum+1}</span>/10</li>
         <li>Score: <span class="score">${correctAnswers}</span></li>
       </ul>
     </header>
@@ -132,12 +132,7 @@ function checkAnswer(answer) {
     $(".question-generator").empty();
     incorrectDisplay();
   }
-  addAnswerNum();
-}
 
-
-function addAnswerNum() {
-  answerNum = answerNum+4;
 }
 
 function incorrectDisplay() {
@@ -155,7 +150,6 @@ function handleNextButton() {
     if (questionNum < 9) {
       console.log("handleNextButton Works!");
       questionNum++;
-      displayQuestion = questionNum + 1;
       beginQuestion();
     }
     else {
@@ -207,7 +201,7 @@ function calculateFinal(correctAnswers) {
   });
 }
 
-    //first page of quiz
+   //first page of quiz
 function beginQuiz() {
   console.log("beginQuiz Works");
   $(".start-button").on("click", function() {
