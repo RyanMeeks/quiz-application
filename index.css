@@ -101,7 +101,7 @@ h2 {
 
 /* Start question styling */
 .question-text {
-
+ 
   margin-left: auto;
   margin-right: auto;
   display: inline block;
@@ -111,6 +111,7 @@ h2 {
   font-size: 2em;
   padding: 10px;
   text-transform: uppercase;
+  width: 50%;
 }
 
 /*answer radios styling*/
@@ -186,7 +187,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   background: #f6c93c80;
-  width: 75%;
+  width: 50%;
 }
 
 #submit-answer {
@@ -219,7 +220,7 @@ label {
 
 #submit-answer:hover, .start-button:hover, #next-question-button:hover, .restart:hover {
   background-color: #f9ce41;
-  color: #00b8f3
+  color: black;
 }
 
 /* Ipad view */
